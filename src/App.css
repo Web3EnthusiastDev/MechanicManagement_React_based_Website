@@ -1,6 +1,27 @@
 .App {
-  text-align: center;
+  display: flex;              /* Enable flexbox */
+  flex-direction: column;     /* Stack children vertically */
+  min-height: 100vh;         /* Full height of the viewport */
+  text-align: center;        /* Center text */
 }
+
+.App-header {
+  background-color: #282c34; /* Header background color */
+  flex: 1;                   /* Grow to fill space */
+  display: flex;             /* Flex for centering content */
+  align-items: center;       /* Center vertically */
+  justify-content: center;   /* Center horizontally */
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.footer {
+  background-color: #333; /* Change to your preferred color */
+  color: white;           /* Text color */
+  padding: 20px 0;       /* Padding for the footer */
+  text-align: center;     /* Center text in footer */
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -15,7 +36,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  flex: 1; /* Take up remaining space, pushing the footer down */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +56,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Footer styles can also be added here or in a separate file */
+.footer {
+  background-color: #333; /* Change to your preferred color */
+  color: white; /* Text color */
+  padding: 20px 0; /* Vertical padding for the footer */
+  text-align: center; /* Center text in footer */
 }

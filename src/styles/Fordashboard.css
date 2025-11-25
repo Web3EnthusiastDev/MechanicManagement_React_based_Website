@@ -1,0 +1,43 @@
+.dashboard-metrics {
+    background-color: rgba(20, 4, 4, 0.1);
+    padding-top: 15px;
+  }
+  
+  .carousel {
+    border-radius: 5px;
+    max-width: 2500px;
+    margin: 5px auto 50px auto;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .carousel .carousel-img {
+    width: 1200px;
+    height: 700px;
+    object-fit: cover;
+    padding-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .carousel-inner {
+    display: flex;
+    transition: transform 15s ease-in-out;
+  }
+  
+  .carousel-slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+    @keyframes fadeInOut {
+    0%, 100% {
+      opacity: 1;
+    }
+    30% {
+      opacity: 0.2;
+    }
+  }
+  
+  .carousel-img {
+    animation: fadeInOut 15s ease-in-out infinite;
+  }
+  
